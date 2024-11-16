@@ -10,7 +10,7 @@ A Laravel SDK for interacting with the Namecheap API.
 You can install the package via composer:
 
 ```bash
-composer require namecheap/laravel-sdk
+composer require josephjoberno/namecheap-laravel-sdk
 ```
 
 ## Requirements
@@ -74,7 +74,7 @@ If you discover any security-related issues, please email josephjoberno@email.co
 ## Credits
 
 - [josephjoberno](https://github.com/josephjoberno)
-- 
+- [sylainx](https://github.com/sylainx)
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

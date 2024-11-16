@@ -1,5 +1,5 @@
 {
-    "name": "josephjoberno/laravel-sdk",
+    "name": "josephjoberno/namecheap-laravel-sdk",
     "description": "Laravel SDK for Namecheap API",
     "type": "library",
     "version": "1.0.0",

@@ -39,13 +39,12 @@ composer require namecheap/laravel-sdk
 ```
 
 3. .env
+``` bash \
 NAMECHEAP_API_KEY=
 NAMECHEAP_USERNAME=
 NAMECHEAP_API_USER=
 NAMECHEAP_CLIENT_IP=
 NAMECHEAP_SANDBOX=
-``` bash 
-
 ```
 ## Usage
 

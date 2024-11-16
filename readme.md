@@ -1,5 +1,3 @@
-Based on the provided code snippets, I'll help you create a README.md for your Namecheap Laravel SDK package. Here's a comprehensive README:
-
 ```markdown
 # Namecheap Laravel SDK
 

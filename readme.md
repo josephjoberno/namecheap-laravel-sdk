@@ -57,7 +57,103 @@ use Namecheap\Laravel\Facades\Namecheap;
 $response = Namecheap::domains()->getList();
 ```
 
-[API Reference](api-reference.md)
+```markdown
+## Available Resources
+
+### Domains
+
+The Domains resource allows you to manage domain names through the Namecheap API.
+
+```php
+use Namecheap\Laravel\Facades\Namecheap;
+
+// Get list of domains
+$domains = Namecheap::domains()->getList();
+
+// Check domain availability
+$available = Namecheap::domains()->check('example.com');
+
+// Register a domain
+$result = Namecheap::domains()->create([
+    'DomainName' => 'example.com',
+    'Years' => 1
+]);
+```
+
+### DNS
+
+The DNS resource provides methods to manage DNS records for your domains.
+
+```php
+use Namecheap\Laravel\Facades\Namecheap;
+
+// Get DNS records for a domain
+$records = Namecheap::dns()->getList('example.com');
+
+// Set DNS hosts for a domain
+$result = Namecheap::dns()->setHosts('example.com', [
+    [
+        'HostName' => '@',
+        'RecordType' => 'A',
+        'Address' => '192.0.2.1',
+        'TTL' => '1800'
+    ]
+]);
+```
+
+### SSL Certificates
+
+Manage SSL certificates through the Namecheap API.
+
+```php
+use Namecheap\Laravel\Facades\Namecheap;
+
+// Get list of SSL certificates
+$certificates = Namecheap::ssl()->getList();
+
+// Purchase a new SSL certificate
+$result = Namecheap::ssl()->create([
+    'Type' => 'PositiveSSL',
+    'Years' => 1
+]);
+```
+
+### Users
+
+Manage user account information and settings.
+
+```php
+use Namecheap\Laravel\Facades\Namecheap;
+
+// Get user address information
+$address = Namecheap::users()->getAddress();
+
+// Get pricing information
+$pricing = Namecheap::users()->getPricing();
+```
+
+### Whois
+
+Query and manage WHOIS information for domains.
+
+```php
+use Namecheap\Laravel\Facades\Namecheap;
+
+// Get WHOIS information for a domain
+$whois = Namecheap::whois()->getInfo('example.com');
+
+// Update WHOIS information
+$result = Namecheap::whois()->update('example.com', [
+    'FirstName' => 'John',
+    'LastName' => 'Doe',
+    'EmailAddress' => 'john@example.com'
+]);
+```
+
+Each resource is accessible through the Namecheap facade and provides a clean, fluent interface to interact with the Namecheap API. For more detailed information about available methods and parameters, please refer to the [Namecheap API documentation](https://www.namecheap.com/support/api/intro/).
+```
+
+
 
 
 ## Features

@@ -57,6 +57,9 @@ use Namecheap\Laravel\Facades\Namecheap;
 $response = Namecheap::domains()->getList();
 ```
 
+[API Reference](api-reference.md)
+
+
 ## Features
 
 - Easy integration with Laravel projects
@@ -80,46 +83,3 @@ If you discover any security-related issues, please email josephjoberno@email.co
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 ```
 
-This README is based on the package information found in the composer.json:
-
-```1:34:packages/namecheap/composer.json
-{
-    "name": "namecheap/laravel-sdk",
-    "description": "Laravel SDK for Namecheap API",
-    "type": "library",
-    "version": "1.0.0",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "josephjoberno",
-            "email": "josephjoberno@email.com"
-        }
-    ],
-    "require": {
-        "php": "^7.4|^8.0",
-        "guzzlehttp/guzzle": "^7.0",
-        "illuminate/support": "^8.0|^9.0|^10.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Namecheap\\Laravel\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Namecheap\\Laravel\\NamecheapServiceProvider"
-            ],
-            "aliases": {
-                "Namecheap": "Namecheap\\Laravel\\Facades\\Namecheap"
-            }
-        }
-    },
-    "minimum-stability": "stable"
-}
-```
-
-
-The README provides essential information about installation, configuration, and usage of the package. It follows common Laravel package conventions and includes all necessary sections for users to get started with the SDK.
-
-Feel free to modify or enhance this README based on any additional features or specific requirements of your package!# namecheap-laravel-sdk

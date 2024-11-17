@@ -149,10 +149,6 @@ $result = Namecheap::whois()->update('example.com', [
 ```
 
 Each resource is accessible through the Namecheap facade and provides a clean, fluent interface to interact with the Namecheap API. For more detailed information about available methods and parameters, please refer to the [Namecheap API documentation](https://www.namecheap.com/support/api/intro/).
-```
-
-
-
 
 ## Features
 

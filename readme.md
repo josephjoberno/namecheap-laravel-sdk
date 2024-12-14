@@ -9,7 +9,9 @@ You can install the package via composer:
 
 ```bash
 composer require josephjoberno/namecheap-laravel-sdk
-```
+``` 
+
+test pull request
 
 ## Requirements
 
